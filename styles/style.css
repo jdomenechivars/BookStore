@@ -47,4 +47,133 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 67, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+* {
+  /*      border: 1px solid black;*/ }
+
+/* line 71, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  background-color: #f30;
+  padding: 15px; }
+  /* line 75, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+  header .halfleftheader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    /* line 80, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+    header .halfleftheader #logo {
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      border: 2px solid white;
+      border-radius: 70%; }
+    /* line 87, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+    header .halfleftheader h1 {
+      line-height: 52px;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 48px;
+      color: white;
+      margin-left: 10px; }
+      /* line 93, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+      header .halfleftheader h1 #ubiqum {
+        color: #333333; }
+  /* line 98, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+  header .halfrightheader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: -15px;
+    margin-right: -10px; }
+    /* line 105, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+    header .halfrightheader form {
+      font-family: "Ubuntu", sans-serif;
+      padding: 5px;
+      margin: 5px;
+      background-color: #f30;
+      text-align: center;
+      color: white;
+      font-size: 16px; }
+      /* line 113, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+      header .halfrightheader form #search {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        outline: none; }
+      /* line 119, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+      header .halfrightheader form ::-webkit-input-placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53); }
+      /* line 123, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+      header .halfrightheader form :-ms-input-placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53); }
+      /* line 127, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+      header .halfrightheader form ::placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53); }
+    /* line 132, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+    header .halfrightheader .icon {
+      height: 30px;
+      width: 30px; }
+    /* line 136, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+    header .halfrightheader .grid,
+    header .halfrightheader .list {
+      cursor: pointer;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      padding: 5px;
+      margin: 5px;
+      background-color: #f30;
+      text-align: center;
+      color: white; }
+
+/* line 150, ../../Users/Joan Domenech/Desktop/UBIQUM/Ubiqum Bookstore/styles/style.scss */
+.filter-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: "Ubuntu", sans-serif;
+  padding: 1px;
+  color: white;
+  font-size: 16px; }
+
 /*# sourceMappingURL=style.css.map */

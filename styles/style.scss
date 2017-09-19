@@ -1,13 +1,11 @@
 //Import Partials
 @import 'partials/normalize';
-
 // Variables
+$Abel: 'Abel',sans-serif;
+$Ubuntu: 'Ubuntu',sans-serif;
 $ubiqum-orange: #f30;
 $ubiqum-grey: #333333;
 $light-grey: #666666;
-$Abel: 'Abel', sans-serif;
-$Ubuntu: 'Ubuntu', sans-serif;
-
 // Mixins
 @mixin row-nowrap {
   display: -webkit-box;
@@ -29,41 +27,132 @@ $Ubuntu: 'Ubuntu', sans-serif;
   flex-flow: column nowrap;
 }
 
-@mixin row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
 @mixin flex-start {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-@mixin flex-end{
+@mixin flex-end {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-@mixin flex-center{
+@mixin flex-center {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-@mixin flex-between{
-  -webkit-box-pack:justify;
-  -ms-flex-pack:justify;
-  justify-content:space-between;
+@mixin flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-@mixin align-center{
+@mixin align-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
+@mixin align-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
 //Style
+* {
+  /*      border: 1px solid black;*/
+}
+
+header {
+  @include row-nowrap;
+  background-color: $ubiqum-orange;
+  padding: 15px;
+  .halfleftheader {
+    width: 100%;
+    @include row-nowrap;
+    @include flex-start;
+    @include align-center;
+    #logo {
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      border: 2px solid white;
+      border-radius: 70%;
+    }
+    h1 {
+      line-height: 52px;
+      font-family: $Ubuntu;
+      font-size: 48px;
+      color: white;
+      margin-left: 10px;
+      #ubiqum {
+        color: $ubiqum-grey;
+      }
+    }
+  }
+  .halfrightheader {
+    @include row-nowrap;
+    @include flex-end;
+    @include align-end;
+    width: 100%;
+    margin-bottom: -15px;
+    margin-right: -10px;
+    form {
+      font-family: $Ubuntu;
+      padding: 5px;
+      margin: 5px;
+      background-color: $ubiqum-orange;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      #search {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        outline: none;
+      }
+      ::-webkit-input-placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53);
+      }
+      :-ms-input-placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53);
+      }
+      ::placeholder {
+        padding-left: 5px;
+        color: rgba(255, 255, 255, 0.53);
+      }
+    }
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+    .grid,
+    .list {
+      cursor: pointer;
+      font-family: $Ubuntu;
+      font-weight: bold;
+      padding: 5px;
+      margin: 5px;
+      background-color: $ubiqum-orange;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+.filter-button-group {
+  @include row-nowrap;
+  @include align-center;
+  @include flex-start;
+  font-family: $Ubuntu;
+  padding: 1px;
+  color: white;
+  font-size: 16px;
+}
