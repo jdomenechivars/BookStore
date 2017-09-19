@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>UBIQUM BOOKSTORE</title>
+
+  <meta charset="utf-8">
+
+  <meta name="theme-color" content="#f30"/>
+
+  <link rel="icon" href="styles/Icons/book.png" type="image/x-icon">
+
+  <!-- Bootstrap -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Own Style -->
+
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/prestyle.css">
+
+<!-- Imported Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="navbar navbar-fixed-top">
+
+    <div class="halfleftheader">
+
+      <a href="index.html"><img id="logo" src="styles/Icons/bookLogo.png" alt="logo"></a>
+
+      <h1>
+        <span id="ubiqum"><strong>Ubiqum</strong></span><br> Bookstore</h1>
+
+    </div>
+
+    <div class="halfrightheader">
+
+      <div id="searcher">
+
+        <form>
+
+          Search:
+          <input id="search" name="search" placeholder="Find books here..." type="text" data-toggle="hideseek" data-list="#booksRail" autocomplete="off">
+
+        </form>
+
+      </div>
+
+      <div class="grid" title="Grid View"><img class="icon" src="styles/Icons/menu.png"></div>
+
+      <div class="list" title="List View"><img class="icon" src="styles/Icons/list.png"></div>
+
+<!--      <div class="filters" title="Filters"><img class="icon" src="styles/filters.png"></div>-->
+
+    </div>
+
+  </header>
+
+  <div class="panelContainer">
+
+    <div class="ppanel">
+
+      <div class="filter-button-group">
+
+        Language:
+
+        <button class="btn" data-filter="all">All</button>
+
+        <button class="btn" data-filter="en">En</button>
+
+        <button class="btn" data-filter="es">Es</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="container">
+
+    <article>
+
+      <p>
+        <strong id="greeting" class="webDescription"></strong>
+      </p>
+
+      <p>
+        <strong class="webDescription">Dive deep into the latest of what's happening in the world of software engineering, architecture, and open source.</strong>
+      </p>
+
+      <p>This site lists books related to programming, computer science, software engineering, web design, mobile app development, networking, databases, information technology, AI, graphics and computer hardware which are provided by publishers or authors on their websites legally.</p>
+
+    </article>
+
+    <div id="booksRail" class="booksRail">
+
+      <!--
+      <div class="bookBox">
+
+        <div class="book">
+
+          <div class="bookCover">
+
+            <img class="cover">
+
+          </div>
+
+          <div class="bookDescription">
+
+            <h2 class="bookTitle">Title</h2>
+            <p class="description">Description</p>
+            <h5 class="bookLanguage">Idioma</h5>
+            <button type="button" class="btn btn-link">
+
+            <a></a>
+
+            </button>
+
+
+        </div>
+
+      </div>
+-->
+
+    </div>
+
+    <button id="myBtn" title="Go to top">▽</button>
+
+  </section>
+
+  <footer class="container">
+
+    <p>©2017 Ubiqum Bookstore | All Rights Reserved</p>
+
+  </footer>
+
+  <!-- Scripts -->
+
+  <script src="js/main.js" type="text/javascript"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.js"></script>
+
+  <script src="js/jquery.filterizr.js"></script>
+
+  <script src="https://cdn.rawgit.com/vdw/HideSeek/master/jquery.hideseek.min.js"></script>
+
+</body>
+
+</html>

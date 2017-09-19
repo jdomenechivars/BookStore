@@ -1,0 +1,414 @@
+* {
+  /*      border: 1px solid black;*/
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  background-color: #f30;
+  padding: 15px;
+  /*  border-bottom: 1px solid #666666; */
+}
+
+.halfleftheader {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.halfrightheader {
+  width: 100%;
+  margin-bottom: -15px;
+  margin-right: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+h1 {
+  line-height: 52px;
+  font-family: 'Ubuntu', monospace;
+  font-size: 48px;
+  color: white;
+  margin-left: 10px;
+}
+
+#ubiqum {
+  color: #333333;
+}
+
+#logo {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 70%;
+}
+
+form {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px;
+  margin: 5px;
+  background-color: #f30;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.filter-button-group {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1px;
+  color: white;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#search {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+:-ms-input-placeholder {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+.grid,
+.list {
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  background-color: #f30;
+  text-align: center;
+  color: white;
+}
+
+.filters {
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  background-color: #f30;
+  text-align: center;
+  color: white;
+}
+
+.panelContainer {
+  position: fixed;
+  width: 100%;
+  z-index: 1029;
+}
+
+.ppanel {
+  display: none;
+  position: fixed;
+  left: 48%;
+  z-index: ;
+  width: 100%;
+  height: 75px;
+  background-color: #f30;
+  margin-top: -25px;
+  margin-right: 15px;
+  padding: 25px;
+}
+
+.btn {
+  background: transparent;
+  margin: 10px;
+}
+
+article {
+  color: #666666;
+  font-family: 'Abel', sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  margin: 25px 0px;
+}
+
+.webDescription {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+section {
+  margin-top: 150px;
+  padding: 15px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #f30;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-size: 36px;
+}
+
+#myBtn:hover {
+  color: #555;
+  /* Add a dark-grey background on hover */
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666666;
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 110%;
+  margin: 15px;
+}
+
+
+/* Style for the grid view*/
+
+.booksRail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.bookBox {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  width: 17%;
+  width: 190px;
+  height: 290px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.book,
+.bookCover,
+.cover {
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  transition: all 1.0s linear;
+}
+
+.bookCover {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bookDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.bookBox:hover .book {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+.bookTitle,
+.bookLanguage {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  position: relative;
+  font-size: 150%;
+}
+
+.bookTitle {
+  color: #f30;
+}
+
+.bookLanguage {
+  color: darkgrey;
+}
+
+.description {
+  font-family: "Arial";
+  position: relative;
+  font-size: 80%;
+  color: white;
+}
+
+.btn-link {
+  color: #f30;
+}
+
+.bookBox:hover .book {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+
+/* Style for the list view*/
+
+.listRail {
+  width: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.listBox {
+  margin: 15px 15px;
+  border-bottom: 1px solid #333333;
+}
+
+.listBook {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.listCover {
+  padding: 15px;
+}
+
+.secondCover {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.listDescription {
+  width: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.secondDescription {
+  font-family: "Arial";
+  position: relative;
+  font-size: 100%;
+  color: #333333;
+}
+
+
+/* Book Details*/
+
+.bookDetails {}
