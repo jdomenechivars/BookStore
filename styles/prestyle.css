@@ -123,11 +123,17 @@ form {
   color: rgba(255, 255, 255, 0.53);
 }
 
+.icon{
+  height: 30px;
+  width: 30px;
+}
+
 .grid,
 .list {
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
+
   padding: 5px;
   margin: 5px;
   background-color: #f30;
