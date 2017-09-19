@@ -17,6 +17,16 @@ $light-grey: #666666;
   flex-flow: row nowrap
 }
 
+@mixin row-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap
+}
+
 @mixin column-nowrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,7 +249,146 @@ footer{
 /* Style for the grid view*/
 
 .booksRail{
-  @include row-nowrap;
+  @include row-wrap;
   @include flex-center;
 }
 
+.bookBox {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  width: 17%;
+  width: 190px;
+  height: 290px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.book,
+.bookCover,
+.cover {
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  transition: all 1.0s linear;
+}
+
+.bookCover {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bookDescription{
+  @include column-nowrap;
+  @include flex-between;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.bookBox:hover .book {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+.bookTitle,
+.bookLanguage {
+  font-family: $Abel;
+  font-weight: bold;
+  position: relative;
+  font-size: 150%;
+}
+
+.bookTitle {
+  color: $ubiqum-orange;
+}
+
+.bookLanguage {
+  color: darkgrey;
+}
+
+.description {
+  font-family: "Arial";
+  position: relative;
+  font-size: 80%;
+  color: white;
+}
+
+.btn-link {
+  color: $ubiqum-orange;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+  outline: none;
+}
+
+.bookBox:hover .book {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+/* Style for the list view*/
+
+.listRail {
+  @include column-nowrap;
+  @include flex-center;
+  width: 100%;
+  padding: 15px;
+}
+
+.listBox {
+  margin: 15px 15px;
+  border-bottom: 1px solid $ubiqum-grey;
+}
+
+.listBook{
+  @include row-nowrap;
+  padding: 15px;
+}
+
+.listCover {
+  padding: 15px;
+}
+
+.secondCover {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.listDescription{
+  @include column-nowrap;
+  @include flex-between;
+  width: 100%;
+  padding: 15px;
+}
+
+.secondDescription {
+  font-family: "Arial";
+  position: relative;
+  font-size: 100%;
+  color: $ubiqum-grey;
+}
+
+/* Book Details*/
+
+.bookDetails {}
